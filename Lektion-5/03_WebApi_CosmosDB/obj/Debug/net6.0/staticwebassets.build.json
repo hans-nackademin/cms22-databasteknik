@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Hyq0DCOZbW3/7jFsmsIXjkHj+H87nRBWh14ZRkSPzjs=",
+  "Source": "03_WebApi_CosmosDB",
+  "BasePath": "_content/03_WebApi_CosmosDB",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
