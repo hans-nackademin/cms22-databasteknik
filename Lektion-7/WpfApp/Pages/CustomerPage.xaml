@@ -1,0 +1,31 @@
+﻿<Page x:Class="WpfApp.Pages.CustomerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CustomerPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="20">
+            <StackPanel>
+                <TextBlock Text="Kundens namn" Margin="0 0 0 5" />
+                <TextBox Name="tb_customer_name" Padding="3" Margin="0 0 0 10" />
+                <TextBlock Text="Kundens E-postadress" Margin="0 0 0 5" />
+                <TextBox Name="tb_customer_email" Padding="3" Margin="0 0 0 10" />
+                <Button Name="btn_customer_save" Click="btn_customer_save_Click" Content="Spara" Padding="3" />
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1" Margin="20">
+
+        </Grid>
+    </Grid>
+</Page>

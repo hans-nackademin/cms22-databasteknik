@@ -1,0 +1,36 @@
+﻿<Page x:Class="WpfApp.Pages.ProductPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProductPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="20">
+            <StackPanel>
+                <TextBlock Text="Produktens namn" Margin="0 0 0 5" />
+                <TextBox Name="tb_product_name" Padding="3" Margin="0 0 0 10" />
+                <TextBlock Text="Produktbeskrivning" Margin="0 0 0 5" />
+                <TextBox Name="tb_product_description" Padding="3" Margin="0 0 0 10" />
+                <TextBlock Text="Produktens pris" Margin="0 0 0 5" />
+                <TextBox Name="tb_product_price" Padding="3" Margin="0 0 0 10" />
+                <TextBlock Text="Produktkategori" Margin="0 0 0 5" />
+                <ComboBox Name="cb_product_category" Margin="0 0 0 20" DisplayMemberPath="Key" />
+                <Button Name="btn_product_save" Click="btn_product_save_Click" Content="Spara" Padding="3" />
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1" Margin="20">
+
+        </Grid>
+
+    </Grid>
+</Page>
